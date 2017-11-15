@@ -1,0 +1,158 @@
+
+
+	====================================================================
+	********************************************************************
+	** File:		VimCommands.txt	  				  				  **
+	** Author:		Cipher						 					  **
+	** Description:	These are my notes that i will be creating based  **
+	** 				on the editor Vim/Vi.				  			  **
+	********************************************************************
+	====================================================================
+
+vimtutor	- This is vim's instructional program that teache's how to
+		  use Vi/Vim.
+(~) Tildes	- This indicates that the line/file is empty or there is no
+		  text.
+view		- Enables user to view a file but not edit it while in Vim
+
+Deleting text	- x (Delete character)
+		  dw (delete word)
+		  dd (delete line)
+		  u  (undo)
+		  ZZ (saved the edited text to the 'work buffer)
+		  d3w (deletes untill the end of third word)
+
+Windows		- CONTROL-W s		- split the screen
+		  CONTROL-W n		- create a new empty window
+		  CONTROL-W w		- moves cursor between windows
+		  CONTROL-W q (or :q)	- close window without savind
+vim -r		- recover file/s after system crash
+vi -R filename	- Creates or open a file in 'read only mode'
+control+w	- delete text from bottom up
+Moving		- UP/DOWN:h and j
+		  LEFT/RIGHT:	k and l
+
+CHANGE COMMANDS
+===============
+
+cc	- removes the entire line
+r	- Replace a letter
+cw	- removes a word
+R	- Overwrites multiple characters. ESC to stop overwriting.
+s	- removes a letter
+S	- Removes an entire line, same as with "cc"
+
+ADVANCED COMMANDS
+=================
+
+J	- Join the current line with the next line
+<<	- shift line to the left (works like TAB key but to the left)
+>>	- shift line to the right (work like TAB key)
+~	- convert alphabet to its opposite case (uppercase and lowercase)
+^G	- CNTRL+G, show current filename and the status
+
+Modes	- (1) Command mode: This is when setting up commands before
+			    input mode
+
+	  (2) Input mode: This is when Vi has been opened
+	  	Insert ('i' insert before cursor)
+	  	Append ('a' append after cursor)
+	  	Open ('o' edit before current line
+		      'O' edit after current line)
+	  	Replace
+	  	Change
+		Record
+
+	 (3) Last line mode
+	 	: (colon) works with the Command mode
+		:set ai		- set automatic indentation
+		:set nu		- set line numbers in Input mode
+		:help		- display Vi help
+		:set mouse=a	- enable mouse use
+		:redo		- redo
+		:help window 	- complete list of window controls
+		:help compatible- Diplay more details on the
+				  compatible parameters
+		:help vi-diff	- Difference from the
+				  original vi
+		:help <feature>	- <feature> allow you to specify what you
+				  specifically need help with. 
+		:set laststatus=2 - enables showmode(command or
+				    insert mode)
+		:set laststatus=1 - disable showmode
+		:x		  - Position cursor on line
+				    number represented by 'x'
+		:f		  - Diplay current filename, current cursor
+				    position and total number of lines in
+				    the file.
+		:f <filename>	- Rename current filename to <filename>
+		:w <filename>	- Write to <filename>		
+		:w <filename>	- To name an unnamed file
+		:w! <filename>	- overwrite an existing file
+		:e <filename>	- opens/creates another file in Vi
+		:cd dirname	- Changes current working dir to dirname
+		:r <filename>	- Adds contents in <filename> to the
+				  currently opened file
+		:nr <filename>	- Adds contents in <filename> to the
+				  currently opened file after the 'n'th line.
+		:e #		- Toggle between two opened file
+
+WORD AND CHARACTER SEARCHING
+============================
+
+/	- search from top to bottom
+?	- search from bottom to the top
+:set ic	- Ignore case when searching
+:set ws	- (wrapscan), if the word is not found at the bottom,
+	  it will try to search for it at the top.
+
+SET COMMANDS
+============
+
+//The below code will change the line numbers in Vim
+:highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE
+guifg=DrakGrey guibg=NONE
+
+:set ai		- autoindentation
+:set noai	- disable autoindentation
+:set nu		- line numbers
+:set sw		- Set width of software tabstop. e.g :set sw=4
+:set wm		- If this option has a value greater than zero, the editor
+		  will automatically "word wrap". E.g, to set the wrap
+		  margin into two characters, you would type
+		  :set wm=2
+:set ro		- Changes the file to read only
+:set term	- Prints terminal type
+:set  bf	- Discards control character from input
+n,ps/str1/str2/g - between line number 'n' and 'p', substitute all(global)
+		   occurances of 'str1' by 'str2'
+1,$s/str1/str2/g - in the whole file ($:lastline), substitute all occurences
+		   of 'str1' by 'str2'
+:s/		- Replace text. 
+		  e.g  :s/"replaced word"/"replacing word"/g
+		  the 'g' stands for globally
+		  
+		  Syntax:
+		  	:[address]:s/old_text/new_text/
+		  	Address components:
+			.		Current line
+			n		Line number 'n'
+			.+m		Current line plus 'm' lines
+			$		Last line
+			/string/	A line that contains "string"
+			%		Entire file
+			[add1],[add2]	Specifie range
+
+:set sm		- Show matching set of parentheses
+:set nosm	- Disable showing of matching parentheses
+:set list	- Show invisible characters
+:set nolist	- Disable showig of invisible characters
+r<replacing char>	- Replaces the letter the cursor is on
+			  e.g rc
+			      this will replace the letter with the
+			      letter "c"
+f<letter to find>	- Find/seached for a letter
+			  e.g fc
+			      this will search for the letter "c"
+;		- Repeat find
+:<number>	- Go to line number <number>

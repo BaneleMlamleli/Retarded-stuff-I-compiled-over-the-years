@@ -1,0 +1,153 @@
+	
+	====================================================================
+	********************************************************************
+	** File:		CMD_Commandstxt				  					  **
+	** Author:		Cipher					  						  **
+	** Description:	These are my notes that i will be creating based  **
+	** 				on the windows CMD terminal.					  **
+	********************************************************************
+	====================================================================
+	
+	
+CONTROL PANEL TOOL
+==================
+
+control							: Control panel
+control access.cpl				: Accessibility options
+control sysdm.cpl				: Add new hardware
+control appwiz.cpl				: Add/remove programs
+control timedate.cpl			: Date/time properties
+control desk.cpl				: Display properties
+control findfast.cpl			: Findfast
+control fonts					: Fonts folder
+control inetcpl.cpl				: Internet properties
+control joy.cpl					: Joystick properties
+control main.cpl keyboard		: Keyboard properties
+control mlcfg32.cpl				: Microsoft exchange (or windows messaging)
+control wgpocpl.cpl				: Microsoft mail post office
+control modem.cpl				: Modem properties
+control main.cpl				: Mouse properties
+control mmsys.cpl				: Multimedia properties
+control netcpl.cpl				: Network properties (NB. In windows 4.0, network properties is NCpa.cpl NOT Netcpl.cpl)
+control password.cpl			: Password properties
+control main.cpl pc card (PCMIA): PC Card
+control main.cpl power			: Power management (Windows 95)
+control powercfg.cpl			: Power management (Windows 98)
+control printers				: Printers folder
+control intl.cpl				: Regional settings
+control sticpl.cpl				: Scanner and cameras
+control mmsys.cpl sounds		: Sound properties
+control sysdm.cpl				: System properties
+control appwiz.cpl,,1			: Add new program from network
+control appwiz.cpl,,2			: Add or remove windows components
+control appwiz.cpl,,3			: Set program access and defaults
+control admintools				: Administrator tools
+control wuaucpl.cpl				: Automatic update
+control desktop					: Display properties (themes, desktop, screensaver)
+control color					: Display properties (color and appearance)
+control schetasks				: Scheduled tasks
+control userpasswords2			: User accounts (autologon)
+
+GENERAL TOOLS
+=============
+
+utilman							: Accessibility options
+hdwwiz.cpl						: Add hardware wizard
+appwiz.cpl						: Add or remove programs
+netplwiz						: Advanced user accounts control panel
+azman.msc						: Authorisation manager
+sdclt							: Backup status and utility
+fsquirt							: Bluetooth transfer wizard
+certmger.msc					: Certificate manager
+charmap							: Character map
+chdsk							: Check disk utility
+colorcpl.exe					: Color management
+cmd								: Command prompt
+dcomcnfg						: Component service
+CompMgmtLauncher				: Computer management
+credwiz							: Credential (passwords)
+devmgmt.msc						: Device management
+directx.cpl						: Direct X control panel (if installed)
+dxdiag							: Direct X troubleshooter
+cleanmgr						: Disk cleanup utility
+diskmgmt.msc					: Disk management
+dfrgui OR defrag				: Disk defragmenter
+desk.cpl						: Display properties (resolution orientation)
+verifier						: Driver verifier utility
+dvdplayer						: DVD player
+rundll32.exe sysdm.cpl, EditEnvironmentVariables	: Edit environment variables
+eventvwr.msc										: Event viewer
+sigverif											: File signiture verification
+%systemroot%\system32\migwiz\migwiz.exe				: Files and settigns transfer tool
+firewall.cpl										: Firewall Control Panel
+c:\windows\system32\odbcad32.exe					: ODBC data source admin (this is for 32 bit)
+c:\windows\System32\rundll32.exe					: User profiles—Edit/change type
+gpedit.msc						: Local group editor
+inetcpl.cpl						: Internet properties
+ipconfig						: IP Configuration
+iscsicpl						: iSCSI Initiator
+lpksetup						: Language pack installer
+secpol.msc						: Local security policy
+lusrmgr.msc						: Local user and group
+logoff							: Logout
+mrt								: Microsoft malicious software removal tool
+msdt							: Microsoft support diagnostic tool
+main.cpl						: Mouse control
+ncpa.cpl						: Network connection
+osk								: Onscreen keyboard
+perfmon.msc						: Performance monitor
+telephon.cpl					: Phone and modem options
+dialer							: Phone dialer
+powercfg.cpl					: Power configuration
+intl.cpl						: Regional settings
+regedit							: Registry edit
+msra							: Remote assistant
+mstsc							: Remote desktop
+rsop.msc						: Resultant set of policy
+wscui.cpl						: Security centre
+shrpubw							: Shared creation wizard
+services.msc					: Services
+slui							: Software licensing/action
+mmsys.cpl						: Sounds and audio
+soundrecorder					: Sound recorder
+sndvol							: Sound volume
+mobsync							: Syncronisation tool
+msconfig						: System configuration tool
+sfc								: System file checker utility (scan/purge)
+msinfo32						: System information
+sysdm.cpl SystemProperties		: System properties
+sysdm.cpl DisplaySYSDMCPL		: System properties
+taskmgr							: Task manager
+telnet							: Telnet client
+tpmInit							: Trusted platform module initialisation wizard
+sysdm.cpl,EditUserProfiles		: User profiles—Edit/change type
+optionalfeatures				: Windows features
+firewall.cpl					: Windows firewall
+wf.msc							: Windows firewall with advanced security
+wiaacmgr						: Windows image acquisition
+mgnify							: Windows magnifier
+wmimgmt.msc						: Windows management infrastructure
+mblctr							: Windows mobility centre
+wscui.cpl						: Windows security centre
+syskey							: Windows system security tool. Encrypt the SAM database (boot password)
+wuapp							: Windows update
+wusa							: Windows update stanalone installer
+winver							: Windows version (about windows)
+write							: WordPad
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
